@@ -1,4 +1,6 @@
 import { useState } from "react";
+import MovieAddButton from "../Button/MovieAddButton";
+
 const HamburgerMenu = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const HamburgerMenuItems = props.HamburgerMenuItems;
@@ -73,7 +75,12 @@ const HamburgerMenu = (props) => {
                 </div>
               </div>
               <nav>
-                <ul className="space-y-4">{HamburgerMenuItems}</ul>
+                <ul className="space-y-4">
+                  <li>{HamburgerMenuItems}</li>
+                  <li>
+                    <MovieAddButton />
+                  </li>
+                </ul>
               </nav>
             </div>
           </div>
