@@ -1,7 +1,9 @@
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
 
-.TopPagebg {
-  background-image: url("../public/TopPage.jpeg");
+.Spiderman {
+  background-image: url("../public/Spiderman.jpeg");
 }

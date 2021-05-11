@@ -7,7 +7,7 @@ const MovieCards = () => {
     <Link href="/">
       <button>
         <div className="shadow-2xl bg-gray-800 text-center pb-10 transform transition duration-300 ease-in-out hover:scale-110 focus:ring-2 focus:border-gray-100">
-          <Image src="/TopPage.jpeg" width="300" height="250" />
+          <Image src="/Spiderman.jpeg" width="300" height="250" />
           <h2 className="text-2xl text-gray-300 font-bold pt-2">Spiderman</h2>
           <div className="pt-4 flex justify-center items-center">
             <GreenButton src="/" title="12/3" />
