@@ -1,5 +1,5 @@
-import HeaderNav from "../component/molecules/HeaderNav";
-import TopPage from "../component/organisms/FirstPage/TopPage";
+import HeaderNav from "../components/molecules/HeaderNav";
+import TopPage from "../components/organisms/FirstPage/TopPage";
 export default function Home() {
   return (
     <div className="bg-gray-700 h-full">
