@@ -1,9 +1,10 @@
 import { useState } from "react";
-import MovieAddButton from "../Button/MovieAddButton";
+import MovieAddButton from "../atoms/Button/MovieAddButton";
 
 const HamburgerMenu = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const HamburgerMenuItems = props.HamburgerMenuItems;
+
   return (
     <div>
       <div className="lg:hidden">
@@ -54,7 +55,7 @@ const HamburgerMenu = (props) => {
                       />
                     </svg>
                     <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                      LKEVIDEO?
+                      LIKEVIDEO?
                     </span>
                   </a>
                 </div>
@@ -78,7 +79,7 @@ const HamburgerMenu = (props) => {
                 <ul className="space-y-4">
                   <li>{HamburgerMenuItems}</li>
                   <li>
-                    <MovieAddButton />
+                    <MovieAddButton src="/" title="Add to Movie" />
                   </li>
                 </ul>
               </nav>

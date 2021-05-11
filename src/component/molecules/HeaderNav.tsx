@@ -1,5 +1,5 @@
 import Link from "next/link";
-import MovieAddButton from "../Button/MovieAddButton";
+import MovieAddButton from "../atoms/Button/MovieAddButton";
 import HamburgerMenu from "./HamburgerMenu";
 
 const HeaderNav = () => {
@@ -57,7 +57,7 @@ const HeaderNav = () => {
           <ul className="flex items-center hidden space-x-8 lg:flex">
             {HeaderNavList}
             <li className="pl-8">
-              <MovieAddButton />
+              <MovieAddButton title="Add to Movie" src="/" />
             </li>
           </ul>
           <div className="lg:hidden">

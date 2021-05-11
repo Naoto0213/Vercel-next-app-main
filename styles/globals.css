@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.TopPagebg {
+  background-image: url("../public/TopPage.jpeg");
+}
