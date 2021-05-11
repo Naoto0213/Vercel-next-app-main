@@ -1,11 +1,10 @@
 import HeaderNav from "../component/molecules/HeaderNav";
-import Image from "next/image";
-import TopPageMain from "../component/organisms/FirstPage/TopPageMain";
+import TopPage from "../component/organisms/FirstPage/TopPage";
 export default function Home() {
   return (
-    <div className="bg-gray-700 h-screen">
+    <div className="bg-gray-700 h-full">
       <HeaderNav />
-      <TopPageMain />
+      <TopPage />
     </div>
   );
 }
