@@ -1,6 +1,7 @@
 import Link from "next/link";
-import MovieAddButton from "../atoms/Button/MovieAddButton";
-import HamburgerMenu from "./HamburgerMenu";
+import MovieAddButton from "../../atoms/Button/MovieAddButton";
+import HamburgerMenu from "../../molecules/HamburgerMenu/HamburgerMenu";
+import { useUser } from "@auth0/nextjs-auth0";
 
 const HeaderNav = () => {
   interface HeaderNavTitle {
@@ -19,10 +20,15 @@ const HeaderNav = () => {
     },
   ];
 
+  const { user, error, isLoading } = useUser();
+
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>{error.message}</div>;
+
   const HeaderNavList = HeaderNavTitle.map((List) => (
     <li>
       <Link href="/">
-        <a className="font-medium tracking-wide sm:text-gray-100 text-gray-900 transition-colors duration-200 hover:text-gray-600">
+        <a className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-gray-600">
           {List.title}
         </a>
       </Link>
@@ -57,7 +63,8 @@ const HeaderNav = () => {
           <ul className="flex items-center hidden space-x-8 lg:flex">
             {HeaderNavList}
             <li className="pl-8">
-              <MovieAddButton title="Add to Movie" src="/" />
+              {!user && <MovieAddButton title="LOGIN" src="/api/auth/login" />}
+              {user && <MovieAddButton title="LOGOUT" src="/api/auth/logout" />}
             </li>
           </ul>
           <div className="lg:hidden">

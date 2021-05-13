@@ -8,12 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^1.3.1",
     "autoprefixer": "^10.2.5",
     "create-next-app": "^10.2.0",
+    "isomorphic-unfetch": "^3.1.0",
     "next": "10.2.0",
-    "postcss": "^8.2.14",
+    "postcss": "^8.2.15",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-router-dom": "^5.2.0",
     "tailwindcss": "^2.1.2"
   },
   "devDependencies": {
