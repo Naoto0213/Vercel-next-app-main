@@ -1,4 +1,4 @@
-import MovieCards from "../../atoms/Cards/MovieCard";
+import MovieCard from "../atoms/Cards/MovieCard";
 
 interface MovieTitle {
   title: string;
@@ -22,7 +22,7 @@ const MovieTitle = [
   },
 ];
 
-const MovieItems = ({ items }) => <MovieCards title={items} />;
+const MovieItems = ({ items }) => <MovieCard title={items} />;
 
 const MovieList = () => {
   return (
