@@ -22,7 +22,7 @@ const HeaderNav = () => {
 
   const { user, error, isLoading } = useUser();
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <div></div>;
   if (error) return <div>{error.message}</div>;
 
   const HeaderNavList = HeaderNavTitle.map((List) => (
@@ -64,7 +64,7 @@ const HeaderNav = () => {
             {HeaderNavList}
             <li className="pl-8">
               {!user && <MovieAddButton title="LOGIN" src="/api/auth/login" />}
-              {user && <MovieAddButton title="LOGOUT" src="/api/auth/logout" />}
+              {user && <MovieAddButton title="Profile" src="/Profile" />}
             </li>
           </ul>
           <div className="lg:hidden">

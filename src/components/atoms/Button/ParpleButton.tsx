@@ -1,5 +1,5 @@
 import Link from "next/link";
-const ParpleStandartButton = ({ src, title }) => {
+const ParpleButton = ({ src, title }) => {
   return (
     <div>
       <Link href={src}>
@@ -16,4 +16,4 @@ const ParpleStandartButton = ({ src, title }) => {
   );
 };
 
-export default ParpleStandartButton;
+export default ParpleButton;

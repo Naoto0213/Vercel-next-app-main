@@ -6,7 +6,9 @@ import React from "react";
 export default function App({ Component, pageProps }) {
   return (
     <UserProvider>
-      <Component {...pageProps} />
+      <div className="bg-gray-700 mh-screen">
+        <Component {...pageProps} />
+      </div>
     </UserProvider>
   );
 }

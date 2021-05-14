@@ -1,10 +1,13 @@
 import { useState } from "react";
 import MovieAddButton from "../../atoms/Button/MovieAddButton";
-
+import { useUser } from "@auth0/nextjs-auth0";
 const HamburgerMenu = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const HamburgerMenuItems = props.HamburgerMenuItems;
+  const { user, error, isLoading } = useUser();
 
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>{error.message}</div>;
   return (
     <div>
       <div className="lg:hidden">
@@ -79,7 +82,10 @@ const HamburgerMenu = (props) => {
                 <ul className="space-y-4 ">
                   <li>{HamburgerMenuItems}</li>
                   <li>
-                    <MovieAddButton src="/" title="LOGIN" />
+                    {!user && (
+                      <MovieAddButton title="LOGIN" src="/api/auth/login" />
+                    )}
+                    {user && <MovieAddButton title="Profile" src="/Profile" />}
                   </li>
                 </ul>
               </nav>

@@ -20,13 +20,34 @@ const MovieTitle = [
   {
     title: "Spiderman",
   },
+  {
+    title: "Spiderman",
+  },
+  {
+    title: "Spiderman",
+  },
+  {
+    title: "Avangers",
+  },
+  {
+    title: "RoneSavivar",
+  },
+  {
+    title: "Guitar",
+  },
+  {
+    title: "Spiderman",
+  },
+  {
+    title: "Spiderman",
+  },
 ];
 
 const MovieItems = ({ items }) => <MovieCards title={items} />;
 
 const MovieList = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 px-36 pb-24">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 px-24 pb-24">
       {MovieTitle.map((items) => (
         <MovieItems items={items.title} />
       ))}

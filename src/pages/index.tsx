@@ -1,4 +1,4 @@
-import HeaderNav from "../components/templates/HeaderNav/HeaderNav";
+import HeaderNav from "../components/organisms/HeaderNav/HeaderNav";
 import TopPage from "./TopPage";
 export default function Home() {
   return (
