@@ -4,8 +4,8 @@
 
 @tailwind utilities;
 
-.Spiderman {
-  background-image: url("../public/Spiderman.jpeg");
+.spiderman {
+  background-image: url("../public/spiderman.jpeg");
 }
 
 .CardImg {
