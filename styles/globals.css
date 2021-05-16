@@ -4,10 +4,6 @@
 
 @tailwind utilities;
 
-.spiderman {
-  background-image: url("../public/Spider_Man-191977.jpg");
-}
-
 .CardImg {
   /* 透過した黒を重ねる */
   background-color: rgba(0, 0, 0, 0.7);
@@ -18,4 +14,8 @@
   bottom: 0;
   left: 0;
   content: " ";
+}
+
+.spiderman {
+  background-image: url("../public/spiderman.jpg");
 }
