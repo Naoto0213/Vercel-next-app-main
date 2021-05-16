@@ -28,7 +28,7 @@ const Drapdown = () => {
           >
             <Menu.Items
               static
-              className="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-gray-200 ring-1 ring-black ring-opacity-5 focus:outline-none"
+              className="relative mt-2 w-40 rounded-md shadow-lg bg-gray-200 ring-1 ring-black ring-opacity-5 focus:outline-none"
             >
               <div className="py-1">
                 <Menu.Item>
