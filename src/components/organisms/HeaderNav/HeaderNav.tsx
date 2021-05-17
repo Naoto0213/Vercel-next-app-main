@@ -1,5 +1,5 @@
 import Link from "next/link";
-import MovieAddButton from "../../atoms/Button/MovieAddButton";
+import MovieAddButton from "../../atoms/Button/MovieAdd";
 import HamburgerMenu from "../../molecules/HamburgerMenu/HamburgerMenu";
 import { useUser } from "@auth0/nextjs-auth0";
 

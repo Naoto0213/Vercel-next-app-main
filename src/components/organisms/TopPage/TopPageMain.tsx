@@ -1,4 +1,4 @@
-import ParpleStandartButton from "../../atoms/Button/ParpleButton";
+import ParpleStandartButton from "../../atoms/Button/Parple";
 
 const TopPageMain = () => {
   return (

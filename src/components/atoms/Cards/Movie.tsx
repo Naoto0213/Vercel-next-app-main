@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Drapdown from "../Button/Drapdown";
+import Drapdown from "../../molecules/Drapdown/Drapdown";
 
 const MovieCard = (props) => {
   const title: string = props.title;

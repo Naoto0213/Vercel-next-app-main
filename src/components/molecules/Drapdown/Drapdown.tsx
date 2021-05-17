@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
+import MenuItem from "../../atoms/MenuItem/Item";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -31,45 +32,10 @@ const Drapdown = () => {
               className="relative mt-2 w-40 rounded-md shadow-lg bg-gray-200 ring-1 ring-black ring-opacity-5 focus:outline-none"
             >
               <div className="py-1">
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#"
-                      className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
-                      Watch Movie
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#"
-                      className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
-                      Wont Movie
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#"
-                      className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
-                      Favorite
-                    </a>
-                  )}
-                </Menu.Item>
+                {/* コンポーネント化 */}
+                <MenuItem title="Watch Movie" />
+                <MenuItem title="Wont Movie" />
+                <MenuItem title="Favorite Movie" />
               </div>
             </Menu.Items>
           </Transition>

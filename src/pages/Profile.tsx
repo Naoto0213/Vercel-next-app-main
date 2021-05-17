@@ -1,7 +1,7 @@
 import HeaderNav from "../components/organisms/HeaderNav/HeaderNav";
-import BorderTitle from "../components/atoms/BorderTitle/BorderTitle";
+import BorderTitle from "../components/atoms/BorderTitle/Title";
 import { useUser } from "@auth0/nextjs-auth0";
-import ProfileCard from "../components/atoms/Cards/ProfileCard";
+import ProfileCard from "../components/atoms/Cards/Profile";
 import MovieList from "../components/molecules/MovieList/MovieList";
 const Profile = () => {
   const { user, error, isLoading } = useUser();

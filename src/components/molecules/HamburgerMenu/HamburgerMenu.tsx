@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MovieAddButton from "../../atoms/Button/MovieAddButton";
+import MovieAddButton from "../../atoms/Button/MovieAdd";
 import { useUser } from "@auth0/nextjs-auth0";
 const HamburgerMenu = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
