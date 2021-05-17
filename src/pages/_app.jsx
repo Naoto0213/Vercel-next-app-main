@@ -7,13 +7,6 @@ import React from "react";
 export default function App({ Component, pageProps }) {
   return (
     <UserProvider>
-      <Head>
-        <title>VideoLike?</title>
-        <meta
-          http-equiv="Content-Security-Policy"
-          content="upgrade-insecure-requests"
-        />
-      </Head>
       <div className="bg-gray-700 mh-screen">
         <Component {...pageProps} />
       </div>
