@@ -1,4 +1,4 @@
-import HeaderNav from "../components/organisms/HeaderNav/HeaderNav";
+import HeaderNav from "../components/organisms/HeaderNav/Nav";
 import BorderTitle from "../components/atoms/BorderTitle/Title";
 import { useUser } from "@auth0/nextjs-auth0";
 import ProfileCard from "../components/atoms/Cards/Profile";

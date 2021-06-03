@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Drapdown from "../../molecules/Drapdown/Drapdown";
 
 const MovieCard = (props) => {

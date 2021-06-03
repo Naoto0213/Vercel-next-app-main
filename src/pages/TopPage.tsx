@@ -1,7 +1,7 @@
 import BorderTitle from "../components/atoms/BorderTitle/Title";
 import MovieList from "../components/molecules/MovieList/MovieList";
 import Profile from "../components/molecules/UserProfile/Acount";
-import TopPageMain from "../components/organisms/TopPage/TopPageMain";
+import TopPageMain from "../components/organisms/TopPage/main";
 
 const TopPage = () => {
   return (
