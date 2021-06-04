@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .CardImg {
   /* 透過した黒を重ねる */
   background-color: rgba(0, 0, 0, 0.5);
