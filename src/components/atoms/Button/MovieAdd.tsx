@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const MovieAddButton = ({ src, title }) => {
   return (
-    <div>
+    <>
       <Link href={src}>
         <a href="">
           <button
@@ -27,7 +27,7 @@ const MovieAddButton = ({ src, title }) => {
           </button>
         </a>
       </Link>
-    </div>
+    </>
   );
 };
 
